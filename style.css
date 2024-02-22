@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+body{
+    background: #F5F1EA;
+    
+    
+}
+header{
+    padding: 12px 192px;
+    background: #F2E1C2;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+header img{
+    width: 56px;
+}
+nav{
+    display: flex;
+    margin-left: 40px;
+    gap: 24px;
+
+}
+nav a{
+    margin: auto;
+    font-weight: 600;
+    color: #D98E32;
+
+}
+h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    font-weight: 800;
+    font-size: 90px;
+    color: white;
+
+}
+.slider {
+    margin: 0 auto;
+    padding: 0 !important;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.slides{
+
+    width: 400%;
+    height: auto;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.slide{
+    width: 25%;
+    height: auto;
+
+}
+.slide img{
+
+    width: 100%;
+    filter:brightness(50%);
+  
+}
+ @keyframes slide{
+    0% {transform: translateX(0);}
+    20% {transform: translateX(0);}
+    30% {transform: translateX(-25%);}
+    50% {transform: translateX(-25%);}
+    55% {transform: translateX(-50%);}
+    75% {transform: translateX(-50%);}
+    80% {transform: translateX(-75%);}
+    100% {transform: translateX(-75%);}
+ }
+
+ #projeto h2{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    font-weight: bold;
+    color: #1F1408;
+    font-size: 32px;
+
+ }
+ #projeto p{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 16px;
+    
+    width: 924px; 
+    color: #1F1408;
+
+ }
+
+ #projeto {
+    background: url('assets/Pasiagem.svg'); 
+    background-repeat: no-repeat;
+    background-size: 1900px, cover;
+    background-position: center -300px;
+    overflow:hidden
+    
+ }
+ #projeto button{
+    width: 188px;
+    height: 48px;
+
+    display: block;
+    margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #F5F1EA;
+    background-color: #1F1408;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+
+ }
+ #app{
+    display: flex;
+    margin: auto 192px;
+    justify-content: center;
+
+
+ }
+#app img{
+display: block;
+height: 744px;
+
+margin: 80px 0 80px 112px;
+
+}
+#app .text{
+
+    margin: auto 0;
+
+
+}
+#app h3{
+
+    margin: auto 0;
+
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: bold;
+    width: 618px; 
+
+
+}
+#app p{
+
+    width: 618px; 
+
+    margin: auto 0;
+
+    margin-top: 8px;
+    text-align: left;
+}
+
+.qrcode{
+    height: 240px;
+    /* width: 1244px; */
+    background-color: #F2E1C2;
+    border-radius: 16px;
+    display: flex;
+    margin: auto 192px;
+    background-image: url(assets/Screens.png);
+    
+    background-position:  right center ;
+    background-repeat: no-repeat;
+
+}
+.qrcode img{
+    margin: auto 56px;
+    height: 160px;
+}
+#bannercode{
+    /* height: 240px; */
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+
+    row-gap: 40px
+
+}
+
+#bannercode a{
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    margin: auto 0;
+
+    
+} 
+a .fa-brands{
+    margin: auto 8px auto 0px;
+    
+    font-size: 40px;
+
+}
+a .market-button-title {
+    display: block;
+    color: #222;
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+a .market-button-subtitle {
+    margin: auto 0;
+    display: block;
+    color: #888;
+    font-size: 0.75rem;
+}
+#pontos{
+    overflow: hidden;
+}
+#pontos h2{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    font-weight: bold;
+    color: #1F1408;
+    font-size: 32px;
+
+ }
+.slide-container{
+    /* background-color: #888; */
+    margin: auto 192px;
+    /* margin-bottom: 48px; */
+    overflow: visible;
+    /* padding: 60px 0; */
+    
+}
+.slide-content{
+    
+    margin: 0 70px;
+    /* overflow: visible; */
+
+}
+ .card {
+    height: 408px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    opacity: .5;
+    
+
+ }
+
+ .swiper-slide:not(.swiper-slide-next +  .swiper-slide +  .swiper-slide + .swiper-slide, .swiper-slide-prev){
+    opacity: 1;
+ }
+
+ .card .image-content{
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 160px;
+ }
+ .card img{
+
+    width: 320px;
+    margin-top: -20px;
+
+ }
+ .card h4{
+    margin: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    
+
+ }
+ .card p{
+    margin: 16px;
+    font-size: 14px;
+
+    height: 138px;
+    
+ }
+ .swiper-navBtn {
+    color: white;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #1F1408;
+    border-radius: 50%;
+
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 24px;
+  }
+  .swiper-button-next{
+    margin-left: 50px;
+  }
+  .swiper-pagination{
+    content-visibility: hidden;
+  }
+
+ 
+  #parceiros h2{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    font-weight: bold;
+    color: #1F1408;
+    font-size: 32px;
+
+ }
+ #parceiros .card-content{
+    display: flex;
+
+    margin: 0 192px 48px;
+ }
+ #parceiros .card-parceiro{
+    width: 200px;
+    height: 135px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+ }
+ #parceiros .card-parceiro img{
+    width: 135px;
+    margin: auto;
+
+
+
+ }
+
+
+ #contato{
+    /* border: 1px red solid; */
+   
+    background-color: #F2E1C2;
+    
+ }
+ #contato h2{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    font-weight: bold;
+    color: #1F1408;
+    font-size: 32px;
+
+ }
+ form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+ }
+ form input{
+    height: 38px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F5F1EA;
+ }
+ form p1{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+ }
+ .dbl-field{
+    display: flex;
+    /* margin: 0 344px; */
+
+    margin-bottom: 16px;
+    gap: 0 124px;
+    
+
+ }
+ .field{
+
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    
+ }
+.field-subject{
+
+    display: grid;
+    padding-bottom: 8px;
+    width: 100%;
+    
+ }
+ form input{
+    padding: 0px 15px;
+    font-size: 15px;
+    
+ }
+ .field-subject textarea{
+    height: 178px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #F5F1EA;
+    resize: none;
+    padding: 10px 15px;
+    font-size: 15px;
+ }
+ .field-subject input:focus{
+
+    border: none;
+    outline: none;
+
+ }
+ .field input:focus{
+
+    border: none;
+    outline: none;
+
+ }
+ form .button-area{
+   display: flex;
+   margin-top: 24px;
+   gap: 16px;
+
+ }
+
+ .button-area span{
+   margin: auto 0;
+   display: none;
+ }
+ #contato button{
+    width: 188px;
+    height: 48px;
+
+
+    cursor:pointer;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #F5F1EA;
+    background-color: #1F1408;
+    border-radius: 8px;
+    margin-top: auto;
+
+
+ }
+ .socials{
+
+    margin: 48px 192px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+
+ }
+ .socials-icons{
+    margin: auto 0;
+    
+ }
+ .socials img{
+    width: 70px;
+
+ }
+
+ .socials a .fa-brands{
+    font-size: 30px;
+    color: #1F1408;
+    margin-left: 16px;
+
+
+ }
+ footer{
+    background-color: #F2E1C2;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ hr{
+    /* margin-top: 32px; */
+    border: 1px solid #1F1408;
+    margin: 0 192px;
+
+ }
+ footer p{
+    padding: 32px 0;
+    margin: 0 192px;
+ }
+ footer .links-footer{
+    padding: 32px 0;
+    margin-right: 192px;
+
+ }
+ footer .links-footer a{
+   color: #1F1408;
+    margin-left: 24px;
+    font-weight: 600;
+ }
+
